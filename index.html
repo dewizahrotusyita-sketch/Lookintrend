@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INI - Stay Inspired Stay Innovative</title>
+<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #8a8077 0%, #314b6e 100%);
+        }
+.feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .vanta-bg {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Vanta.js Background -->
+    <div id="vanta-bg" class="vanta-bg fixed top-0 left-0 w-full h-full -z-10"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md fixed w-full z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-[#314b6e] hovered-element">LIT</span>
+<span class="ml-2 text-sm font-medium text-[#8a8077]">Look In Trend</span>
+</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-[#314b6e] font-medium">Beranda</a>
+                    <a href="#" class="text-[#8a8077] hover:text-[#314b6e] transition">Koleksi</a>
+                    <a href="#" class="text-[#8a8077] hover:text-[#314b6e] transition">Tentang Kami</a>
+                    <a href="#" class="text-[#8a8077] hover:text-[#314b6e] transition">Event</a>
+                    <a href="#" class="text-[#8a8077] hover:text-[#314b6e] transition">Blog</a>
+</div>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 rounded-full text-gray-600 hover:bg-gray-100 transition">
+                        <i data-feather="search"></i>
+                    </button>
+                    <button class="p-2 rounded-full text-gray-600 hover:bg-gray-100 transition">
+                        <i data-feather="shopping-bag"></i>
+                    </button>
+                    <button class="md:hidden p-2 rounded-full text-gray-600 hover:bg-gray-100 transition">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-blue-500">Stay LIT Stay Trendy Stay Green</span>
+</h1>
+                <h2 class="text-xl md:text-2xl font-medium text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Fashion Berkelanjutan untuk Generasi Masa Depan
+                </h2>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="px-6 py-3 bg-emerald-600 text-white font-medium rounded-full hover:bg-emerald-700 transition shadow-lg shadow-emerald-200">
+                        Mulai Personalisasi
+                    </button>
+                    <button class="px-6 py-3 bg-white text-emerald-600 font-medium rounded-full hover:bg-gray-50 transition border border-emerald-100">
+                        <div class="flex items-center">
+                            <i data-feather="play" class="mr-2 w-4 h-4"></i>
+                            Lihat Demo
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Intro -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold text-[#314b6e] bg-[#e8ded4] rounded-full mb-4">Tentang Kami</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Revolusi Fashion dengan <span class="text-[#314b6e]">Kesadaran</span>
+</h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-600">
+                        Lit hadir untuk mengubah cara Anda berbelanja pakaian. Kami percaya fashion yang trendi tidak harus merusak bumi. Dengan inovasi teknologi dan bahan ramah lingkungan seperti pelepah pisang yang diolah menjadi kulit sintetis, kami menciptakan pakaian yang stylish sekaligus berkelanjutan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition feature-card">
+                    <div class="w-14 h-14 bg-[#e8ded4] rounded-xl flex items-center justify-center mb-6">
+                        <i data-feather="leaf" class="w-6 h-6 text-[#314b6e]"></i>
+</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Ramah Lingkungan</h3>
+                    <p class="text-gray-600">
+                        Menggunakan bahan daur ulang dan organik yang mengurangi limbah hingga 70% dibandingkan fast fashion konvensional.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition feature-card">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-feather="cpu" class="w-6 h-6 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">AI Personalisasi</h3>
+                    <p class="text-gray-600">
+                        Sistem rekomendasi cerdas yang memahami tubuh dan preferensi gaya Anda untuk menciptakan tampilan sempurna.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition feature-card">
+                    <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i data-feather="users" class="w-6 h-6 text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Komunitas Lit</h3>
+                    <p class="text-gray-600">
+                        Bergabunglah dengan komunitas Gen Z yang peduli lingkungan dan dapatkan akses ke event eksklusif.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold text-[#8197ac] bg-[#e8ded4] rounded-full mb-4">Inovasi Kami</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Pengalaman Fashion <span class="text-[#314b6e]">Masa Depan</span>
+</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-[#e8ded4] text-[#314b6e]">
+<i data-feather="smartphone" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Mobile App Pintar</h3>
+                                <p class="text-gray-600">
+                                    Unggah foto atau input data tubuh Anda (lingkar dada, tinggi, berat badan) untuk mendapatkan rekomendasi pakaian yang pas sempurna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-[#e8ded4] text-[#8197ac]">
+<i data-feather="droplet" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Color Analysis AI</h3>
+                                <p class="text-gray-600">
+                                    AI kami menganalisis warna kulit Anda untuk merekomendasikan palet warna yang membuat Anda terlihat lebih cerah dan percaya diri.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-[#e8ded4] text-[#8a8077]">
+<i data-feather="layers" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Capsule Wardrobe</h3>
+                                <p class="text-gray-600">
+                                    Sistem mix-and-match cerdas yang membantu Anda membuat 30+ kombinasi gaya hanya dengan 10 item pakaian.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://huggingface.co/spaces/raevena/ecochic-threads-palette/resolve/main/images/a4b96848-49fe-48c3-89c3-7926e4811baf.jpeg" alt="Lit App Preview" class="w-full h-auto">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                            <div>
+                                <h3 class="text-white text-xl font-bold mb-2">Personal Style Assistant</h3>
+                                <p class="text-white/90">Unduh aplikasi kami untuk pengalaman fashion yang dipersonalisasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                    <span class="inline-block px-3 py-1 text-xs font-semibold text-[#8197ac] bg-[#e8ded4] rounded-full mb-4">#StayLit</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Bergabung dalam <span class="text-[#314b6e]">Gerakan</span> Kami
+</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Kami tidak hanya menjual pakaian, tapi juga gaya hidup berkelanjutan. Ikuti event seru kami dan dapatkan hadiah eksklusif!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden">
+                        <img src="https://huggingface.co/spaces/raevena/ecochic-threads-palette/resolve/main/images/taman%20literasi,%20blok%20m.jpeg" alt="Scavenger Hunt" class="w-full h-full object-cover">
+</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Scavenger Hunt</h3>
+                    <p class="text-gray-600 mb-4">
+                        Ikuti petunjuk di lokasi viral favorit Gen Z dan menangkan produk eksklusif dari Lit!
+                    </p>
+                    <button class="text-[#314b6e] font-medium flex items-center">
+Info Selengkapnya
+                        <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden">
+                        <img src="https://huggingface.co/spaces/raevena/ecochic-threads-palette/resolve/main/images/Sewing Workshop.jpeg" alt="Workshop" class="w-full h-full object-cover">
+</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">DIY Workshop</h3>
+                    <p class="text-gray-600 mb-4">
+                        Belajar mendaur ulang pakaian lama menjadi item fashion baru yang stylish.
+                    </p>
+                    <button class="text-emerald-600 font-medium flex items-center">
+                        Info Selengkapnya
+                        <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden">
+                        <img src="https://huggingface.co/spaces/raevena/ecochic-threads-palette/resolve/main/images/Gemini_Generated_Image_bs90a1bs90a1bs90.png" alt="Pop-up Store" class="w-full h-full object-cover">
+</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pop-up Store</h3>
+                    <p class="text-gray-600 mb-4">
+                        Kunjungi toko fisik temporer kami dan dapatkan merchandise eksklusif dari bahan ramah lingkungan.
+                    </p>
+                    <button class="text-emerald-600 font-medium flex items-center">
+                        Info Selengkapnya
+                        <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#314b6e] text-white">
+<div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Tetap Trendy Tanpa Merusak Bumi</h2>
+            <p class="text-lg mb-8 opacity-90">
+                Unduh aplikasi Lit sekarang dan dapatkan analisis warna & rekomendasi gaya gratis untuk 7 hari pertama!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="px-6 py-3 bg-white text-[#314b6e] font-medium rounded-full hover:bg-gray-100 transition shadow-lg">
+<div class="flex items-center justify-center">
+                        <i data-feather="download" class="mr-2 w-4 h-4"></i>
+                        Unduh Sekarang
+                    </div>
+                </button>
+                <button class="px-6 py-3 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition">
+                    Pelajari Lebih Lanjut
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">LIT</h3>
+                    <p class="text-gray-400 mb-4">
+                        Look In Trend - Fashion berkelanjutan untuk generasi masa depan.
+</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Produk</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Koleksi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Koleksi Terbatas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Bahan & Teknologi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Perusahaan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Karir</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wider mb-4">Bantuan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pengembalian</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Ukuran</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 LIT. All rights reserved.
+</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Syarat & Ketentuan</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Cookie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x314b6e,
+shininess: 35.00,
+            waveHeight: 15.00,
+            waveSpeed: 0.85,
+            zoom: 0.8
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
